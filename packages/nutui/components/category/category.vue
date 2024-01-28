@@ -32,7 +32,7 @@ export default defineComponent({
 <template>
   <div :class="classes" :style="customStyle">
     <div class="nut-category__cateList" style="height: 100%;">
-      <div v-if="type === 'classify' || type === 'text'">
+      <div v-if="type === 'classify' || type === 'text'" style="flex-shrink: 0; overflow-y: auto;">
         <div v-for="(item, index) in category" :key="index" class="nut-category__cateListLeft">
           <div
             :class="[checkIndex === index ? 'nut-category__cateListItemChecked' : 'nut-category__cateListItem']"
