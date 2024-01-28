@@ -28,7 +28,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div :class="classes">
+  <div :class="classes" style="overflow: auto;">
     <div v-if="type === 'classify'" class="nut-category-pane__cateListRight">
       <slot />
       <div v-for="(item, index) in categoryChild" :key="index">

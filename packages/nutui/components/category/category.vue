@@ -31,7 +31,7 @@ export default defineComponent({
 
 <template>
   <div :class="classes" :style="customStyle">
-    <div class="nut-category__cateList">
+    <div class="nut-category__cateList" style="height: 100%;">
       <div v-if="type === 'classify' || type === 'text'">
         <div v-for="(item, index) in category" :key="index" class="nut-category__cateListLeft">
           <div
